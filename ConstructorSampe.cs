@@ -7,13 +7,12 @@ namespace ConstructorSampe
     {
         static void Main(string[] args)
         {
-            Box box1 = new Box();
-            Console.WriteLine($"体積は{box1.GetVolume()}、表面積は{box1.GetSurface()}");
-            Box box2 = new Box(
+            Triangle triangle1 = new Triangle(3,5.5f);
+            Console.WriteLine($"面積は{triangle1.GetSurface()}");
+            Triangle triangle2 = new Triangle(
                 InteractiveInput.InputFloat("幅："),
-                InteractiveInput.InputFloat("高さ："),
-                InteractiveInput.InputFloat("奥行："));
-            Console.WriteLine($"体積は{box2.GetVolume()}、表面積は{box2.GetSurface()}");
+                InteractiveInput.InputFloat("高さ："));
+            Console.WriteLine($"面積は{triangle2.GetSurface()}");
         }
     }
 }
